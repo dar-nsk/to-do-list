@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthly Todo Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Monthly Todo Tracker</h1>
+
+    <div class="calendar-nav">
+      <button onclick="prevMonth()">← Previous</button>
+      <span id="monthYear"></span>
+      <button onclick="nextMonth()">Next →</button>
+    </div>
+
+    <div id="calendar"></div>
+
+    <div class="add-task">
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <h2>Tasks for <span id="selectedDate"></span></h2>
+    <ul id="taskList"></ul>
+    
+    <div class="progress">
+      <p id="progressText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
